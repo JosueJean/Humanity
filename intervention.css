@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background-color: #EDF6FF;
+  }
+
+  /* Style pour le header */
+  header {
+    background-color: #EDF6FF;
+    padding: 10px 0; 
+  }
+  
+  /* Style pour la navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EDF6FF; 
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  
+  /* Style pour le logo */
+  .logo img {
+    width: 100px; 
+    height: auto;
+  }
+  
+/* Style pour les liens de la navbar */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+  }
+  
+  .nav-links li {
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  
+  /* Style pour le bouton "Faire un don" */
+  .donation button {
+    padding: 16px 32px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .donation button:hover {
+    background-color: #333;
+  }
+  
+  .donation button a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Style pour le texte en gras */
+    .nav-links a.active {
+    font-weight: bold;
+    }
+
+    /* Styles pour la page principale */
+    main {
+      background-color: #fff;
+      padding: 20px;
+    }
+
+    /* Styles pour le conteneur principal */
+    .main-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    /* Styles pour la section de sensibilisation */
+    .sensibilisation {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .sensibilisation h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    /* Styles pour le conteneur des images */
+    .images-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .image-box {
+        flex-basis: calc(33.33% - 10px);
+        margin-bottom: 20px;
+    }
+    
+    .image-box img {
+        max-width: 60%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Styles pour le conteneur de contenu */
+    .content-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #EDF6FF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styles pour la section des instructeurs */
+    .instructors-section {
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+
+    .instructors-section h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .instructors-title {
+      margin-bottom: 20px;
+    }
+
+    .instructors-section p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    /* Styles pour la section vidéo */
+    .video-section {
+        display: flex;
+        align-items: center; 
+        gap: 20px; 
+    }
+    
+    .video-container {
+        flex: 1; 
+    }
+    
+    .video-container video {
+        width: 100%;
+        max-width: 100%;
+        height: 300px; 
+        object-fit: cover;
+        border-radius: 10px;
+    }
+        
+    .video-info {
+        flex: 1; 
+    }
+    
+    .video-section {
+        display: flex;
+        align-items: center; 
+        gap: 20px; 
+    }
+    
+    .video-container {
+        flex: 1; 
+    }
+    
+    .video-container video {
+        width: 100%;
+        max-width: 100%; 
+        border-radius: 10px; 
+    }
+    
+    .video-info {
+        flex: 1; 
+    }
+    
+    .post-date {
+        color: #373CD7;
+        font-weight: bold;
+    }
+    
+  /* Styles pour le conteneur des garanties */
+  .guarantee-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-top: 2.8em;
+      margin-bottom: 2.8em;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between; 
+      flex-wrap: wrap; 
+    }
+    
+    .guarantee-title {
+      text-align: center;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    
+    .guarantee-title h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .guarantee-info {
+      flex-basis: calc(33.33% - 20px); 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+      box-sizing: border-box; 
+      padding: 10px; 
+    }
+    
+    .guarantee-info img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    
+    .guarantee-info h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .guarantee-info p {
+      font-size: 16px;
+    }
+    
+    
+
+    footer {
+      background-color: #373CD7;
+      color: #fff;
+      padding: 30px 0;
+    }
+    
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    
+    .footer-section {
+      margin-bottom: 40px;
+    }
+    
+    .footer-section h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .social-links a {
+      color: #fff;
+      font-size: 24px;
+      margin-right: 15px;
+    }
+    
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+    
+    .contact-info i {
+      margin-right: 5px; 
+      font-size: 18px;
+      transition: color 0.3s ease; 
+    }
+    
+    .contact-info i:hover {
+      color: #F49A05; 
+    }
+    
+    .legal a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    
+    .social-links a:hover {
+      color: #F49A05;
+    }
+
+
+    /* Pour les navigateurs WebKit (Safari, Chrome) */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #007bff; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0056b3;
+    }
+
+    
+    @media only screen and (max-width: 1000px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+    
+      .logo img {
+        width: 80px;
+      }
+    
+      .donation {
+        margin-top: 10px;
+      }
+    
+      .donation button {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+    
+
+        /* Styles pour le footer */
+        footer {
+          padding: 20px 0; 
+        }
+  
+        .footer-container {
+          padding-left: 20px; 
+          padding-right: 20px;
+        }
+  
+        .footer-section {
+          margin-bottom: 30px;
+        }
+  
+        .footer-section h3 {
+          font-size: 18px; 
+          margin-bottom: 8px; 
+        }
+  
+        .social-links a {
+          font-size: 20px; 
+          margin-right: 10px; 
+        }
+  
+        .contact-info p {
+          margin-bottom: 8px; 
+        }
+  
+        .contact-info i {
+          font-size: 16px; 
+        }
+  
+        .legal a {
+          margin-right: 5px; 
+        }
+    }
+    
